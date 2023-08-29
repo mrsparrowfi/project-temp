@@ -1,0 +1,146 @@
+/* import all fonts here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Mr+Dafoe&family=Mrs+Saint+Delafield&family=Odibee+Sans&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* import all bootstrap-icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+/*
+    You can use normalized css to reset all default css styles for all html elements
+    Install with npm and run the command
+    # npm install normalize.css
+*/
+
+/* reset body styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body:focus {
+    outline: none;
+}
+
+/* reset figure styles */
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* reset all forms styles */
+form {
+    margin: 0;
+    padding: 0;
+}
+
+/* reset horizontal line styles */
+hr {
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    border-width: 0px;
+}
+
+/* reset all input styles styles */
+input {
+    outline: none;
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.input:focus {
+    outline: none;
+}
+
+/* reset 
+    ordered list (ol) 
+    description list (dl) 
+    and un-ordered list (ul) styles 
+*/
+ol,
+dl,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+}
+
+/* reset all list-items (li) styles */
+li {
+    list-style: none;
+    list-style-type: none;
+}
+
+/* reset all paragraph styles */
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* reset all headers styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+/* reset all anchor-tag links styles */
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:active,
+a:link:active,
+a:visited:active {
+    text-decoration: none;
+}
+
+/* reset all buttons styles */
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    background: none;
+    outline: inherit;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* scroll-bar css */
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+    background: orange;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
+    background-color: blue;
+    border: 1px solid orange;
+    outline: 1px solid slategrey;
+}

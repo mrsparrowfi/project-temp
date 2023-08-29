@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.323acd76.css",
+    "main.js": "/static/js/main.19797ae7.js",
+    "static/media/oriyo.png": "/static/media/oriyo.58641aa51a67b2b47ef1.png",
+    "index.html": "/index.html",
+    "main.323acd76.css.map": "/static/css/main.323acd76.css.map",
+    "main.19797ae7.js.map": "/static/js/main.19797ae7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.323acd76.css",
+    "static/js/main.19797ae7.js"
+  ]
+}
