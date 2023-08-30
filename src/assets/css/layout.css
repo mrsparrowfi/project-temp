@@ -1,0 +1,674 @@
+
+:root {
+    --background-hover: rgb(242, 247, 246);
+    --font-color: rgb(12, 0, 0);
+    --box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    --btn-background: rgb(11, 7, 238);
+}
+
+/*-------------------------------CSS for Layout---------------------------------*/
+/*
+.app--container,
+.container--wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}
+*/
+
+.container--wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container--wrapper {
+    display: flex;
+    gap: 1.5rem 2rem;
+}
+
+.container--wrapper .left--panel {
+    width: 19.5%;
+}
+
+.container--wrapper .right--panel {
+    width: 79.5%;
+}
+
+.app--container .title--holder,
+.container--wrapper .left--panel .title--holder,
+.container--wrapper .right--panel .title--holder {
+    width: 100%;
+}
+
+.app--container .hr--menu--holder,
+.container--wrapper .left--panel .vr--menu--holder,
+.container--wrapper .right--panel .hr--menu--holder {
+    width: 100%;
+}
+
+.app--container .card--holder,
+.container--wrapper .right--panel .card--holder {
+    width: 100%;
+}
+
+/*-----------------------------CSS for Banners---------------------------------*/
+
+.banner {
+    width: 100%;
+    margin: 6rem 0;
+    height: 60rem;
+}
+
+.banner--divider {
+    width: 100%;
+    margin: 3rem 0;
+    height: 30rem;
+}
+
+.banner--divider--img,
+.banner--home--img,
+.banner--cat--img,
+.banner--brand--img,
+.banner--shop--img,
+.banner--singlebrand--img,
+.banner--singleshop--img,
+.banner--subscribe--img,
+.banner--market--img {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner--divider--img {
+    background-image: url("../images/divider/divider--img--1.webp");
+}
+/*
+.banner--home--img {
+    background-image: url("../images/head-banner.jpg");
+}
+
+.banner--cat--img {
+    background-image: url("../images/cat-banner.jpg");
+}
+
+.banner--pro--img {
+    background-image: url("../images/pro-banner.jpg");
+}
+*/
+.banner--brand--img {
+    background-image: url("../images/banner/slider--img--1.jpg");
+}
+/*
+.banner--shop--img {
+    background-image: url("../images/shop-banner.jpg");
+}
+
+.banner--singlebrand--img {
+    background-image: url("../images/nokia.jpg");
+}
+
+.banner--singleshop--img {
+    background-image: url("../images/k-market.jpg");
+}
+
+.banner--market--img {
+    background-image: url("../images//isoomena.jpg");
+}
+*/
+/* ----------------------------CSS for Title Holder---------------------------- */
+
+.title--holder {
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    border-radius: .3rem;
+    box-shadow: var(--box-shadow);
+}
+
+.title--holder:hover {
+    color: tomato;
+    background: var(--background-hover);
+}
+
+.title--holder .layout--title {
+    float: left;
+    display: block;
+    margin-top: .3rem;
+    padding: .5rem 0;
+    padding-left: 1rem;
+}
+
+.container--wrapper .left--panel .title--holder .layout--title {
+    padding: .8rem 0;
+    padding-left: 1rem;
+}
+
+.title--holder .layout--title .h4--title {
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.title--holder .layout--title .h6--title,
+.title--holder .layout--title .h6--title i {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.title--holder .layout--btn {
+    display: block;
+    padding: .5rem 0;
+    padding-right: 1rem;
+}
+
+.title--holder .layout--btn {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    gap: 0 .5rem;
+}
+
+.title--holder .layout--btn .btn--left,
+.title--holder .layout--btn .btn--right {
+    padding: .8rem 1.6rem;
+    border-radius: 2.5rem;
+    margin-left: .5rem;
+    background: rgb(248, 246, 246);
+}
+
+.title--holder .layout--btn .btn--left,
+.title--holder .layout--btn .btn--right {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--font-color);
+}
+
+.title--holder:hover .layout--btn .btn--left,
+.title--holder:hover .layout--btn .btn--right {
+    background: rgb(5, 9, 245);
+    color: whitesmoke;
+}
+
+.title--holder .layout--icon {
+    display: none;
+}
+
+.title--holder .layout--icon {
+    padding: .5rem 1rem;
+}
+
+.title--holder .layout--icon i {
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.center {
+    padding: .3rem 0;
+    text-align: center;
+}
+
+/* -----------------------------CSS for Horizontal Menu holder---------------------------- */
+
+.hr--menu--holder {
+    margin-bottom: 1.5rem;
+}
+
+.hr--menu--holder ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1rem;
+}
+
+.hr--menu--holder .active--menu {
+    background: rgb(248, 246, 246);
+}
+
+.hr--menu--holder ul li {
+    padding: .5rem 1.6rem;
+    border-radius: 2.5rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.hr--menu--holder ul li:hover {
+    background: rgb(248, 246, 246);
+}
+
+.hr--menu--holder ul li span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--font-color);
+}
+
+.hr--menu--holder ul li:hover span {
+    color: tomato;
+}
+
+/*-----------------------------CSS for Vertical Menu holder---------------------*/
+
+.vr--menu--holder {
+    margin-bottom: 1.5rem;
+    padding: 1rem 1rem;
+    border-radius: .3rem;
+    box-shadow: var(--box-shadow);
+}
+
+.vr--menu--holder:hover {
+    background: var(--background-hover);
+}
+
+.vr--menu--holder li {
+    padding: 1rem 0;
+    border-bottom: 1px dotted tomato;
+}
+
+.vr--menu--holder li:hover {
+    border-radius: .3rem;
+    background: rgb(255, 255, 255);
+}
+
+.vr--menu--holder li:last-child {
+    border-bottom: none;
+}
+
+.vr--menu--holder li span,
+.vr--menu--holder li span i {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: left;
+    color: rgb(12, 0, 0);
+}
+
+.vr--menu--holder li:hover span {
+    color: tomato;
+}
+
+/*------------------------------CSS for Content holder---------------------------*/
+
+.content--holder {
+    margin-bottom: 1.5rem;
+    padding: 1rem 1rem;
+    border-radius: .3rem;
+    box-shadow: var(--box-shadow);
+}
+
+.content--holder:hover {
+    background: var(--background-hover);
+}
+
+.content--holder .content--info {
+    margin: 1rem 0;
+    padding: 0 1rem;
+    padding-right: 1.4rem;
+    max-height: 35rem;
+    overflow-y: scroll;
+}
+
+.content--holder p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.75;
+}
+
+.content--holder .content--info::first-letter {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.content--holder li {
+    padding: 1rem 1rem;
+    border-bottom: 1px dotted tomato;
+}
+
+.content--holder li:last-child {
+    border-bottom: none;
+}
+
+.content--holder li,
+.content--holder li i {
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.content--holder .floorplan--btn {
+    margin: 2rem 2rem;
+    padding: .5rem 1.6rem;
+    text-align: center;
+    border-radius: 2.5rem;
+    background: var(--btn-background);
+}
+
+.content--holder .floorplan--btn,
+.content--holder .floorplan--btn i {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: whitesmoke;
+}
+
+.content--holder .floorplan--btn:hover {
+    background: var(--background-hover);
+    color: var(--font-color);
+}
+
+/* -----------------------------CSS for Card holder---------------------------- */
+/*
+.card--holder {
+    display: grid;
+    grid-gap: 1rem 1rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px dotted tomato;
+}
+*/
+
+.card--holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1.5rem 2rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+/* ----------------------------CSS for Media Query---------------------------- */
+
+@media only screen 
+and (max-width: 500px) {
+
+    /*------------------------CSS for Layout Starts------------------------------------*/
+
+    .container--wrapper {
+        flex-direction: column;
+    }
+
+    .container--wrapper .left--panel {
+        order: 1;
+        width: 100%;
+    }
+
+    .container--wrapper .right--panel {
+        order: 2;
+        width: 100%;
+    }
+
+    .hr--menu--holder {
+        padding: 1rem;
+        border-radius: .3rem;
+        box-shadow: var(--box-shadow);
+    }
+
+    .hr--menu--holder:hover {
+        background: var(--background-hover);
+    }
+
+    .hr--menu--holder:hover li:hover {
+        background: rgb(255, 255, 255);
+    }
+
+    .vr--menu--holder {
+        width: minmax(19rem, 100%);
+    }
+
+    .app--container .card--holder,
+    .container--wrapper .right--panel .card--holder {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen 
+and (min-width: 501px) 
+and (max-width: 600px) {
+
+    /*------------------------CSS for Layout Starts------------------------------------*/
+
+    .container--wrapper .left--panel {
+        order: 1;
+        width: 45%;
+    }
+
+    .container--wrapper .right--panel {
+        order: 2;
+        width: 55%;
+    }
+
+    /*------------------------CSS for Layout Ends------------------------------------*/
+
+    .hr--menu--holder {
+        padding: 1rem;
+        border-radius: .3rem;
+        box-shadow: var(--box-shadow);
+    }
+
+    .hr--menu--holder:hover {
+        background: var(--background-hover);
+    }
+
+    .hr--menu--holder:hover li:hover {
+        background: rgb(255, 255, 255);
+    }
+
+    .vr--menu--holder {
+        width: minmax(19rem, 100%);
+    }
+
+    .app--container .card--holder,
+    .container--wrapper .right--panel .card--holder {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen 
+and (min-width: 601px) 
+and (max-width: 800px) {
+
+    .container--wrapper .left--panel {
+        width: 35%;
+    }
+
+    .container--wrapper .right--panel {
+        width: 65%;
+    }
+
+    .hr--menu--holder {
+        padding: 1rem;
+        border-radius: .3rem;
+        box-shadow: var(--box-shadow);
+    }
+
+    .hr--menu--holder:hover {
+        background: var(--background-hover);
+    }
+
+    .hr--menu--holder:hover li:hover {
+        background: rgb(255, 255, 255);
+    }
+
+    .vr--menu--holder {
+        width: minmax(20.5rem, 100%);
+    }
+
+    .app--container .card--holder,
+    .container--wrapper .right--panel .card--holder {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen 
+and (min-width: 801px) 
+and (max-width: 1000px) {
+
+    .container--wrapper .left--panel {
+        width: 30%;
+    }
+
+    .container--wrapper .right--panel {
+        width: 70%;
+    }
+
+    .hr--menu--holder {
+        padding: 1rem;
+        border-radius: .3rem;
+        box-shadow: var(--box-shadow);
+    }
+
+    .hr--menu--holder:hover {
+        background: var(--background-hover);
+    }
+
+    .hr--menu--holder:hover li:hover {
+        background: rgb(255, 255, 255);
+    }
+
+    .vr--menu--holder {
+        width: minmax(22rem, 100%);
+    }
+
+    .app--container .card--holder,
+    .container--wrapper .right--panel .card--holder {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen 
+and (min-width: 1001px) 
+and (max-width: 1200px) {
+
+    .container--wrapper .left--panel {
+        width: 25%;
+    }
+
+    .container--wrapper .right--panel {
+        width: 75%;
+    }
+
+    .right--panel .hr--menu--holder {
+        padding: 1rem;
+        border-radius: .3rem;
+        box-shadow: var(--box-shadow);
+    }
+
+    .right--panel .hr--menu--holder:hover {
+        background: var(--background-hover);
+    }
+
+    .right--panel .hr--menu--holder:hover li:hover {
+        background: rgb(255, 255, 255);
+    }
+
+    .vr--menu--holder {
+        width: minmax(23.5rem, 100%);
+    }
+
+    .app--container .card--holder {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container--wrapper .right--panel .card--holder {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen 
+and (min-width: 1201px) {
+
+    .container--wrapper .left--panel {
+        width: 20%;
+    }
+
+    .container--wrapper .right--panel {
+        width: 80%;
+    }
+
+    .vr--menu--holder {
+        width: minmax(25rem, 100%);
+    }
+
+    /*
+    .card--holder {
+        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+        justify-content: space-between;
+        justify-items: start;
+    }
+    */
+
+    .container--wrapper .right--panel .card--holder {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media only screen 
+and (max-width: 650px) {
+
+    .title--holder .layout--btn {
+        display: none;
+    }
+
+    .title--holder .layout--icon {
+        display: block;
+        float: right;
+    }
+
+    .title--holder.responsive {
+        position: relative;
+        box-shadow: none;
+    }
+
+    .title--holder.responsive .layout--title,
+    .title--holder.responsive .layout--btn {
+        border-radius: .3rem;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .title--holder.responsive .layout--icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .title--holder.responsive .layout--title,
+    .title--holder.responsive .layout--btn,
+    .title--holder.responsive .layout--icon {
+        float: none;
+    }
+
+    .title--holder.responsive .layout--btn {
+        width: 100%;
+        display: block;
+        margin-top: 1rem;
+        padding-left: .5rem;
+    }
+
+    .title--holder.responsive .layout--btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        gap: .5rem 0;
+    }
+
+    .title--holder.responsive:hover {
+        background: none;
+    }
+
+    .title--holder.responsive .layout--title:hover,
+    .title--holder.responsive .layout--icon:hover {
+        background: var(--background-hover);
+    }
+
+}

@@ -1,11 +1,28 @@
-import './App.css';
+// import all components
+import Navbar from "./navbar/navbar";
+import Layout from "./layouts/index";
+import Footer from "./footer/footer";
+
+// import all modules
+
+
+// import all data
+
+
+// import css files
+import "./App.css";
+
 
 function App() {
+
   return (
-    <div className="App">
-	<h1>Welcome to React</h1>
-    </div>
+    <>
+      <Navbar />
+      <Layout />
+      <Footer />
+    </>
   );
+
 }
 
 export default App;
