@@ -1,16 +1,13 @@
 {
   "files": {
     "main.css": "/radius/static/css/main.073c9b0a.css",
-    "main.js": "/radius/static/js/main.33cc8dc2.js",
-    "static/js/787.b8945111.chunk.js": "/radius/static/js/787.b8945111.chunk.js",
-    "static/media/logo.svg": "/radius/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.js": "/radius/static/js/main.c2e46716.js",
     "index.html": "/radius/index.html",
     "main.073c9b0a.css.map": "/radius/static/css/main.073c9b0a.css.map",
-    "main.33cc8dc2.js.map": "/radius/static/js/main.33cc8dc2.js.map",
-    "787.b8945111.chunk.js.map": "/radius/static/js/787.b8945111.chunk.js.map"
+    "main.c2e46716.js.map": "/radius/static/js/main.c2e46716.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.33cc8dc2.js"
+    "static/js/main.c2e46716.js"
   ]
 }
