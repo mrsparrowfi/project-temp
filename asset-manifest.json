@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.ed7fdbd8.css",
-    "main.js": "/static/js/main.c2e46716.js",
+    "main.css": "/static/css/main.323acd76.css",
+    "main.js": "/static/js/main.5c9c0c5d.js",
+    "static/media/oriyo.png": "/static/media/oriyo.58641aa51a67b2b47ef1.png",
     "index.html": "/index.html",
-    "main.ed7fdbd8.css.map": "/static/css/main.ed7fdbd8.css.map",
-    "main.c2e46716.js.map": "/static/js/main.c2e46716.js.map"
+    "main.323acd76.css.map": "/static/css/main.323acd76.css.map",
+    "main.5c9c0c5d.js.map": "/static/js/main.5c9c0c5d.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed7fdbd8.css",
-    "static/js/main.c2e46716.js"
+    "static/css/main.323acd76.css",
+    "static/js/main.5c9c0c5d.js"
   ]
 }
