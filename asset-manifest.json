@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/radius/static/css/main.ed7fdbd8.css",
-    "main.js": "/radius/static/js/main.c2e46716.js",
-    "index.html": "/radius/index.html",
-    "main.ed7fdbd8.css.map": "/radius/static/css/main.ed7fdbd8.css.map",
-    "main.c2e46716.js.map": "/radius/static/js/main.c2e46716.js.map"
+    "main.css": "/static/css/main.ed7fdbd8.css",
+    "main.js": "/static/js/main.c2e46716.js",
+    "index.html": "/index.html",
+    "main.ed7fdbd8.css.map": "/static/css/main.ed7fdbd8.css.map",
+    "main.c2e46716.js.map": "/static/js/main.c2e46716.js.map"
   },
   "entrypoints": [
     "static/css/main.ed7fdbd8.css",
