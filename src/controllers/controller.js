@@ -1,6 +1,3 @@
-//import { Link } from "react-router-dom";
-//import SubMenu from "../nav/submenu";
-
 
 export function H4Title (title) {
 
@@ -14,7 +11,6 @@ export function H4Title (title) {
 
 }
 
-
 export function H6Title (title) {
 
     return (
@@ -26,7 +22,6 @@ export function H6Title (title) {
     );
 
 }
-
 
 export function H6ITitle (title, iclass) {
 
@@ -40,7 +35,6 @@ export function H6ITitle (title, iclass) {
 
 }
 
-
 export function Banner (classname) {
 
     return (
@@ -52,26 +46,17 @@ export function Banner (classname) {
 
 }
 
-/*
-export function MenuBody (data, index) {
-
-    const itemIndex = index;
-    const itemPath = data.path;
-    const itemTitle = data.title;
+export function Divider (classname) {
 
     return (
         <>
-            <Link to={ itemPath }>
-                <li key={ itemIndex }>
-                    <span> { itemTitle } </span>
-                    <SubMenu subtitle={ itemTitle } />
-                </li>
-            </Link>
+            <div id={ classname } className={ classname }>
+            </div>
         </>
     );
 
 }
-*/
+
 export const BackToTop = () => {
 
     window.scrollTo({
@@ -99,54 +84,3 @@ export const ScrollToTarget = (ref) => {
     });
 
 };
-
-
-
-/*
-
-import { useRef } from 'react';
-
-function Slider () {
-
-    const head = useRef(null);
-    const body = useRef(null);
-    const foot = useRef(null);
-
-    const scrollAnySection = (ref) => {
-        window.scrollTo({
-            top: ref.current.offsetTop,
-            behavior: 'smooth',
-        });
-    };
-
-    return (
-
-        <div>
-            <div style={{ textAlign: "center", fontSize: "5rem" }} >
-                <h2 onClick={() => scrollAnySection (head) }> Head </h2>
-                <h2  onClick={() => scrollAnySection (body)}> Body </h2>
-                <h2 onClick={() => scrollAnySection (foot)}> Foot </h2>
-            </div>
-            <h2 id="top" style={{ textAlign: "center", fontSize: "5rem" }} >
-                <span>Top of the page</span>
-            </h2>
-            <h2 ref={ head } style={{ textAlign: "center", marginTop: "150rem", fontSize: "5rem" }} >
-                <span>Head of the page</span>
-            </h2>
-            <h2 ref={ body } style={{ textAlign: "center", marginTop: "150rem", fontSize: "5rem" }} >
-                <span>Body of the page</span>
-            </h2>
-            <h2 ref={ foot } style={{ textAlign: "center", marginTop: "150rem", fontSize: "5rem" }} >
-                <span>Foot of the page</span>
-            </h2>
-            <h2 id="bottom" style={{ textAlign: "center", marginTop: "150rem", fontSize: "5rem" }} >
-                <span>Bottom of the page</span>
-            </h2>
-        </div>
-
-    );
-}
-
-export default Slider;
-
-*/
