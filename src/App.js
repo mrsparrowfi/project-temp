@@ -1,7 +1,9 @@
 // import all components
-import Navbar from "./navbar/navbar";
+//import OldNav from "./navbar/oldnavbar";
 import Layout from "./layouts/index";
 import Footer from "./footer/footer";
+
+import Navbar from "./navbar/navbar";
 
 // import all modules
 
