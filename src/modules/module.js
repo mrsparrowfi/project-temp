@@ -1,14 +1,34 @@
 
 import { 
+    navItems,
     SubCategory, 
     Products 
 } from "../data/data";
 
 const data = Products();
+const navMenu = navItems;
 const subcategory = SubCategory();
 
 export const allProducts = data;
 
+export const filterSubCategoryByDesign = 
+    subcategory.filter((items) => (
+        items.catTitle === 'Design'
+    )
+);
+// flatMap() is not working here
+export const filterSubCategoryByDesignTest = 
+    navMenu.filter((item) => item.catTitle === 'Design')
+    .flatMap((item) => item.submenu.map((subitem) => subitem.subcategoryTitle)
+);
+/*
+export const filterSubCategoryByDesign = [].concat(
+    ...navMenu
+        .filter((item) => item.catTitle === 'Design')
+        .map((item) => item.submenu.map((subitem) => subitem.subcategoryTitle)
+    )
+);
+*/
 export const filterSubCategoryByApparel = 
     subcategory.filter((items) => (
         items.catTitle === 'Apparel'

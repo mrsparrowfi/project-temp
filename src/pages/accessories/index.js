@@ -27,11 +27,23 @@ import {
 // import all data
 import { design } from "../../data/data";
 
+// import all controller function
+import { Banner, Divider } from "../../controllers/controller";
+
+// import all styles
+
 
 function Accessories () {
 
+    const propsObj = {
+        bannerHome: "banner banner--home--img",
+        firstDivider: "banner--divider banner--divider--img",
+        secondDivider: "banner--divider banner--divider--img"
+    }
+
     return (
         <>
+            { Banner( propsObj.bannerHome ) }
             <FaceMaskComponent 
                 title="Face Masks" 
                 design= { design } 
@@ -50,6 +62,7 @@ function Accessories () {
                 product={ filterDataByPhoneCase } 
                 interval = { 5 } 
             />
+            { Divider( propsObj.firstDivider ) }
             <StickerComponent 
                 title="Stickers" 
                 design= { design } 
@@ -68,6 +81,7 @@ function Accessories () {
                 product={ filterDataByNeckGaiter } 
                 interval = { 5 } 
             />
+            { Divider( propsObj.firstDivider ) }
             <StationeryComponent 
                 title="Stationery" 
                 design= { design } 

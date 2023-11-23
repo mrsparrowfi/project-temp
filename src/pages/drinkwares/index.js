@@ -17,11 +17,23 @@ import {
 // import all data
 import { design } from "../../data/data";
 
+// import all controller function
+import { Banner, Divider } from "../../controllers/controller";
+
+// import all styles
+
 
 function Drinkware () {
 
+    const propsObj = {
+        bannerHome: "banner banner--home--img",
+        firstDivider: "banner--divider banner--divider--img",
+        secondDivider: "banner--divider banner--divider--img"
+    }
+
     return (
         <>
+            { Banner( propsObj.bannerHome ) }
             <MugComponent 
                 title="Mugs" 
                 design= { design } 
@@ -34,6 +46,7 @@ function Drinkware () {
                 product={ filterDataByWaterBottle } 
                 interval = { 5 } 
             />
+            { Divider( propsObj.firstDivider ) }
             <SteelTumblerComponent 
                 title="Steel Tumbler" 
                 design= { design } 

@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import { useState, useEffect, useRef } from 'react';
 import { Link } from "react-router-dom";
-import { SubCategory } from "../data/data";
+import { navItems } from "../data/data";
 
 import "./navbar.css";
 import logo from "../assets/images/logo/oriyo.png";
@@ -9,30 +9,10 @@ import logo from "../assets/images/logo/oriyo.png";
 function NavBar () {
 
     return (
-        <Nav>
-            <Logo />
-            <MenuItem id="item--home" iconClass = "bi bi-house-door" title = "Home" />
-            <MenuItem id="item--design" iconClass = "bi bi-grid" title = "Design" />
-            <MenuItem id="item--apparel" iconClass = "bi bi-gift" title = "Apparel" />
-            <MenuItem id="item--homeware" iconClass = "bi bi-bootstrap" title = "Homeware" />
-            <MenuItem id="item--accessories" iconClass = "bi bi-shop" title = "Accessories" />
-            <MenuItem id="item--drinkware" iconClass = "bi bi-bank" title = "Drinkware" />
-            <MenuItem id="item--aboutus" iconClass = "bi bi-bank" title = "About Us" />
-        </Nav>
-    );
-
-}
-
-function Nav (props) {
-
-    return (
         <nav>
             <ul className="nav--container" id="nav--container">
-                { props.children }
-                <li className="flex--space"></li>
-                <li className="flex--space"></li>
-                <li className="flex--space"></li>
-                <li className="flex--space"></li>
+                <Logo />
+                <NavMenuItems />
             </ul>
         </nav>
     );
@@ -45,77 +25,196 @@ function Logo () {
         <>
             <li className="flex--space"></li>
             <li className="flex--space"></li>
+            <li className="flex--space"></li>
             <li className="logo--img" id="logo--img">
                 <Link to="/">
                     <img src={ logo } alt="logo--img" />
+                    {/* <span> Radius </span> */}
+                    <div className="logo--wrapper">
+                        <svg width="15rem" height="2.5rem">
+                            <text x="40%" y="100%" dy="-0.25em" textAnchor="middle">
+                                Oriyostyles
+                            </text>
+                        </svg>
+                    </div>
                 </Link>
             </li>
-            <li className="flex--space"></li>
             <li className="flex--space"></li>
         </>
     );
 
 }
 
-function MenuItem (props) {
-
-    const [ open, setOpen ] = useState (false);
-    const preventChildOnClick = (event) => {
-        event.stopPropagation();
-    }
+const NavMenuItems = () => {
 
     return (
-        <li className="menu--item" id={ props.id } onClick={() => { setOpen(!open) }}>
+        <>
             {
-                (props.title !== 'Home') ? (
-                    <Link to={ props.title }>
-                        <i className={ props.iconClass }></i> 
-                        <span> { props.title } </span>
-                    </Link>
+                navItems.map((menu, index) => {
+                    const depthLevel = 0;
+
+                    return (
+                        <MenuItems
+                            items={menu}
+                            key={index}
+                            depthLevel={depthLevel}
+                        />
+                    );
+                })
+            }
+
+            <li className="flex--space"></li>
+            <li className="flex--space"></li>
+            <li className="flex--space"></li>
+            <li className="flex--space"></li>
+        </>
+    );
+
+};
+
+const MenuItems = ({ items, depthLevel }) => {
+
+    const [dropdown, setDropdown] = useState(false);
+    let ref = useRef();
+
+    useEffect(() => {
+
+        const handler = (event) => {
+            if (
+                dropdown &&
+                ref.current &&
+                !ref.current.contains(event.target)
+            ) {
+                setDropdown(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handler);
+        document.addEventListener('touchstart', handler);
+
+        return (() => {
+            document.removeEventListener('mousedown', handler);
+            document.removeEventListener('touchstart', handler);
+        });
+
+    }, [dropdown]);
+
+    const onMouseEnter = () => {
+        window.innerWidth > 960 && setDropdown(true);
+    };
+
+    const onMouseLeave = () => {
+        window.innerWidth > 960 && setDropdown(false);
+    };
+
+    const closeDropdown = () => {
+        dropdown && setDropdown(false);
+    };
+
+    return (
+        <li
+            className="menu-items"
+            ref={ref}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+            onClick={closeDropdown}
+        >
+            {
+                items.url && items.submenu ? (
+                    <>
+                        <button
+                            type="button"
+                            aria-haspopup="menu"
+                            aria-expanded={dropdown ? 'true' : 'false'}
+                            onClick={() => setDropdown((prev) => !prev)}
+                        >
+                            {
+                                window.innerWidth < 960 && depthLevel === 0 ? (
+                                    items.title
+                                ) : (
+                                    <Link to={items.url}>
+                                        <i className={ items.iconClass }></i>
+                                        <span> {items.title} </span>
+                                    </Link>
+                                )
+                            }
+
+                            {
+                                depthLevel > 0 && window.innerWidth < 960 ? null : (
+                                    depthLevel > 0 && window.innerWidth > 960 ? (
+                                        <span>&raquo;</span>
+                                    ) : (
+                                        <span className="arrow" />
+                                    )
+                                )
+                            }
+                        </button>
+
+                        <Dropdown
+                            depthLevel={depthLevel}
+                            submenus={items.submenu}
+                            dropdown={dropdown}
+                        />
+                    </>
+                ) : !items.url && items.submenu ? (
+                    <>
+                        <button
+                            type="button"
+                            aria-haspopup="menu"
+                            aria-expanded={dropdown ? 'true' : 'false'}
+                            onClick={() => setDropdown((prev) => !prev)}
+                        >
+                            {items.title}{' '}
+                            {
+                                depthLevel > 0 ? (
+                                    <span>&raquo;</span>
+                                ) : (
+                                    <span className="arrow" />
+                                )
+                            }
+                        </button>
+
+                        <Dropdown
+                            depthLevel={depthLevel}
+                            submenus={items.submenu}
+                            dropdown={dropdown}
+                        />
+                    </>
                 ) : (
-                    <Link to="/">
-                        <i className={ props.iconClass }></i> 
-                        <span> { props.title } </span>
+                    <Link to={items.url}>
+                        <i className={ items.iconClass }></i>
+                        <span> {items.title} </span>
                     </Link>
                 )
-            }
-            {
-                (props.title !== 'Home') ? (
-                    <div 
-                        id="component--holder" 
-                        className={`component--holder ${ open ? 'active' : ''}`} 
-                        onClick= {(e) => preventChildOnClick(e)}
-                    >
-                        <SubMenu navTitle= { props.title } />
-                    </div>
-                ) : null
             }
         </li>
     );
 
-}
+};
 
-function SubMenu (props) {
+const Dropdown = ({ submenus, dropdown, depthLevel }) => {
 
-    const data = SubCategory();
-    const title = props.navTitle;
-    const filterMenu = data.filter((item) => item.catTitle === title)
+    depthLevel = depthLevel + 1;
+    const dropdownClass = depthLevel > 1 ? 'dropdown-submenu' : '';
 
     return (
-        <ul className="menu--container" id="menu--container">
+        <ul
+            className={`dropdown ${dropdownClass} ${
+                dropdown ? 'show' : ''
+            }`}
+        >
             {
-                filterMenu.map((list) => 
-                    <li className="menu--title" id={ list.sid }>
-                        <Link to={`${title}/${list.subcategoryTitle}`}>
-                            <span> { list.subcategoryTitle } </span>
-                        </Link>
-                    </li>
-                )
+                submenus.map((submenu, index) => (
+                    <MenuItems
+                        items={submenu}
+                        key={index}
+                        depthLevel={depthLevel}
+                    />
+                ))
             }
         </ul>
     );
 
-}
-
+};
 
 export default NavBar;
