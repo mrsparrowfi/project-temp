@@ -30,6 +30,7 @@ function Layout () {
         <Routes>
             <Route path="/" element={ <Home /> }/>
             <Route path="alldesign" element={ <AllDesign /> }/>
+            <Route path="alldesign/*" element={ <AllDesign /> }/>
             <Route path="apparel" element={ <Apparel /> }/>
             <Route path="apparel/*" element={ <ApparelSubMenuRoute /> }/>
             <Route path="homeware" element={ <Homeware /> }/>

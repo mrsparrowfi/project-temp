@@ -1,4 +1,300 @@
 
+export const navItems = [
+    {
+        cid: 1,
+        title: "Home",
+        catTitle: 'Home',
+        iconClass: "bi bi-house-door",
+        url: '/'
+    },
+
+    {
+        cid: 2,
+        title: 'Design',
+        catTitle: 'Design',
+        iconClass: "bi bi-grid",
+        url: '/design',
+        submenu: [
+            {
+                sid: 21,
+                title: 'Nature',
+                subcategoryTitle: 'Nature',
+                url: 'design/nature'
+            },
+
+            {
+                sid: 22,
+                title: 'Psychology',
+                subcategoryTitle: 'Psychology',
+                url: 'design/psychology'
+            },
+
+            {
+                sid: 23,
+                title: 'Campaign',
+                subcategoryTitle: 'Campaign',
+                url: 'design/campaign'
+            },
+
+            {
+                sid: 24,
+                title: 'Random',
+                subcategoryTitle: 'Random',
+                url: 'design/random'
+            },
+
+            {
+                sid: 25,
+                title: 'Quotes',
+                subcategoryTitle: 'Quotes',
+                url: 'design/quotes'
+            },
+
+            {
+                sid: 26,
+                title: 'Science',
+                subcategoryTitle: 'Science',
+                url: 'design/science'
+            }
+        ]
+    },
+
+    {
+        cid: 3,
+        title: 'Apparel',
+        catTitle: 'Apparel',
+        iconClass: "bi bi-gift",
+        url: '/apparel',
+        submenu: [
+            {
+                sid: 31,
+                title: 'T-shirts',
+                subcategoryTitle: 'T-shirts',
+                url: 'apparel/t-shirts'
+            },
+
+            {
+                sid: 32,
+                title: 'Hoodies',
+                subcategoryTitle: 'Hoodies',
+                url: 'apparel/hoodies'
+            },
+
+            {
+                sid: 33,
+                title: 'Sweatshirts',
+                subcategoryTitle: 'Sweatshirts',
+                url: 'apparel/sweatshirts'
+            },
+
+            {
+                sid: 34,
+                title: 'Tank Tops',
+                subcategoryTitle: 'Tank Tops',
+                url: 'apparel/tank tops'
+            },
+
+            {
+                sid: 35,
+                title: 'Sleeve Tee',
+                subcategoryTitle: 'Sleeve Tee',
+                url: 'apparel/sleeve tee'
+            },
+
+            {
+                sid: 36,
+                title: 'Athletics',
+                subcategoryTitle: 'Athletics',
+                url: 'apparel/athletics'
+            }
+        ]
+    },
+
+    {
+        cid: 4,
+        title: 'Homeware',
+        catTitle: 'Homeware',
+        iconClass: "bi bi-bootstrap",
+        url: '/homeware',
+        submenu: [
+            {
+                sid: 41,
+                title: 'Pillows',
+                subcategoryTitle: 'Pillows',
+                url: 'homeware/pillows'
+            },
+
+            {
+                sid: 42,
+                title: 'Wall Art',
+                subcategoryTitle: 'Wall Art',
+                url: 'homeware/wall art'
+            },
+
+            {
+                sid: 43,
+                title: 'Bath',
+                subcategoryTitle: 'Bath',
+                url: 'homeware/bath'
+            },
+
+            {
+                sid: 44,
+                title: 'Bedding',
+                subcategoryTitle: 'Bedding',
+                url: 'homeware/bedding'
+            },
+
+            {
+                sid: 45,
+                title: 'Office',
+                subcategoryTitle: 'Office',
+                url: 'homeware/office'
+            }
+        ]
+    },
+
+    {
+        cid: 5,
+        title: 'Accessories',
+        catTitle: 'Accessories',
+        iconClass: "bi bi-shop",
+        url: '/accessories',
+        submenu: [
+            {
+                sid: 51,
+                title: 'Face Masks',
+                subcategoryTitle: 'Face Masks',
+                url: 'accessories/face masks'
+            },
+
+            {
+                sid: 52,
+                title: 'Hats',
+                subcategoryTitle: 'Hats',
+                url: 'accessories/hats'
+            },
+
+            {
+                sid: 53,
+                title: 'Phone Cases',
+                subcategoryTitle: 'Phone Cases',
+                url: 'accessories/phone cases'
+            },
+
+            {
+                sid: 54,
+                title: 'Stickers',
+                subcategoryTitle: 'Stickers',
+                url: 'accessories/stickers'
+            },
+
+            {
+                sid: 55,
+                title: 'Bags',
+                subcategoryTitle: 'Bags',
+                url: 'accessories/bags'
+            },
+
+            {
+                sid: 56,
+                title: 'Neck Gaiters',
+                subcategoryTitle: 'Neck Gaiters',
+                url: 'accessories/neck gaiters'
+            },
+
+            {
+                sid: 57,
+                title: 'Stationery',
+                subcategoryTitle: 'Stationery',
+                url: 'accessories/stationery'
+            },
+
+            {
+                sid: 58,
+                title: 'Fanny Packs',
+                subcategoryTitle: 'Fanny Packs',
+                url: 'accessories/fanny packs'
+            },
+
+            {
+                sid: 59,
+                title: 'Socks',
+                subcategoryTitle: 'Socks',
+                url: 'accessories/socks'
+            }
+        ]
+    },
+
+    {
+        cid: 6,
+        title: 'Drinkware',
+        catTitle: 'Drinkware',
+        iconClass: "bi bi-bank",
+        url: '/drinkware',
+        submenu: [
+            {
+                sid: 61,
+                title: 'Mugs',
+                subcategoryTitle: 'Mugs',
+                url: 'drinkware/mugs'
+            },
+
+            {
+                sid: 62,
+                title: 'Water Bottle',
+                subcategoryTitle: 'Water Bottle',
+                url: 'drinkware/water bottle'
+            },
+
+            {
+                sid: 63,
+                title: 'Steel Tumbler',
+                subcategoryTitle: 'Steel Tumbler',
+                url: 'drinkware/steel tumbler'
+            },
+
+            {
+                sid: 64,
+                title: 'Pint Glass',
+                subcategoryTitle: 'Pint Glass',
+                url: 'drinkware/pint glass'
+            }
+        ]
+    },
+
+    {
+        cid: 7,
+        title: 'About Us',
+        catTitle: 'About Us',
+        iconClass: "bi bi-bank",
+        url: '/about us',
+        submenu: [
+            {
+                sid: 71,
+                title: 'Privacy Policy',
+                subcategoryTitle: 'Privacy Policy',
+                url: 'about us/privacy policy'
+            },
+
+            {
+                sid: 72,
+                title: 'Cookie Policy',
+                subcategoryTitle: 'Cookie Policy',
+                url: 'about us/cookie policy'
+            },
+
+            {
+                sid: 73,
+                title: 'Contact Us',
+                subcategoryTitle: 'Contact Us',
+                url: 'about us/contact us'
+            }
+        ]
+    }
+
+]
+
 const category = [
     {
         cid: 1,
@@ -19,6 +315,7 @@ const category = [
         cid: 4,
         catTitle: "Drinkware",
     }
+
 ]
 
 export const design = [
@@ -41,225 +338,232 @@ export function Category () {
 
 const subcategory = [
     {
-        cid: 1,
-        sid: 1,
+        cid: 3,
+        sid: 31,
         catTitle: "Apparel",
         subcategoryTitle: "T-shirts"
     },
 
     {
-        cid: 1,
-        sid: 2,
+        cid: 3,
+        sid: 32,
         catTitle: "Apparel",
         subcategoryTitle: "Hoodies"
     },
 
     {
-        cid: 1,
-        sid: 3,
+        cid: 3,
+        sid: 33,
         catTitle: "Apparel",
         subcategoryTitle: "Sweatshirts"
     },
 
     {
-        cid: 1,
-        sid: 4,
+        cid: 3,
+        sid: 34,
         catTitle: "Apparel",
         subcategoryTitle: "Tank Tops"
     },
 
     {
-        cid: 1,
-        sid: 5,
+        cid: 3,
+        sid: 35,
         catTitle: "Apparel",
         subcategoryTitle: "Sleeve Tee"
     },
 
     {
-        cid: 1,
-        sid: 6,
+        cid: 3,
+        sid: 36,
         catTitle: "Apparel",
         subcategoryTitle: "Athletics"
     },
 
     {
-        cid: 2,
-        sid: 7,
+        cid: 4,
+        sid: 41,
         catTitle: "Homeware",
         subcategoryTitle: "Pillows"
     },
 
     {
-        cid: 2,
-        sid: 8,
+        cid: 4,
+        sid: 42,
         catTitle: "Homeware",
         subcategoryTitle: "Wall Art"
     },
 
     {
-        cid: 2,
-        sid: 9,
+        cid: 4,
+        sid: 43,
         catTitle: "Homeware",
         subcategoryTitle: "Bath"
     },
 
     {
-        cid: 2,
-        sid: 10,
+        cid: 4,
+        sid: 44,
         catTitle: "Homeware",
         subcategoryTitle: "Bedding"
     },
 
     {
-        cid: 2,
-        sid: 11,
+        cid: 4,
+        sid: 45,
         catTitle: "Homeware",
         subcategoryTitle: "Office"
     },
 
     {
-        cid: 3,
-        sid: 12,
+        cid: 5,
+        sid: 51,
         catTitle: "Accessories",
         subcategoryTitle: "Face Masks"
     },
 
     {
-        cid: 3,
-        sid: 13,
+        cid: 5,
+        sid: 52,
         catTitle: "Accessories",
         subcategoryTitle: "Hats"
     },
 
     {
-        cid: 3,
-        sid: 14,
+        cid: 5,
+        sid: 53,
         catTitle: "Accessories",
         subcategoryTitle: "Phone Cases"
     },
 
     {
-        cid: 3,
-        sid: 15,
+        cid: 5,
+        sid: 54,
         catTitle: "Accessories",
         subcategoryTitle: "Stickers"
     },
 
     {
-        cid: 3,
-        sid: 16,
+        cid: 5,
+        sid: 55,
         catTitle: "Accessories",
         subcategoryTitle: "Bags"
     },
 
     {
-        cid: 3,
-        sid: 17,
+        cid: 5,
+        sid: 56,
         catTitle: "Accessories",
         subcategoryTitle: "Neck Gaiters"
     },
 
     {
-        cid: 3,
-        sid: 18,
+        cid: 5,
+        sid: 57,
         catTitle: "Accessories",
         subcategoryTitle: "Stationery"
     },
 
     {
-        cid: 3,
-        sid: 19,
+        cid: 5,
+        sid: 58,
         catTitle: "Accessories",
         subcategoryTitle: "Fanny Packs"
     },
 
     {
-        cid: 3,
-        sid: 20,
+        cid: 5,
+        sid: 59,
         catTitle: "Accessories",
         subcategoryTitle: "Socks"
     },
 
     {
-        cid: 4,
-        sid: 21,
+        cid: 6,
+        sid: 61,
         catTitle: "Drinkware",
         subcategoryTitle: "Mugs"
     },
 
     {
-        cid: 4,
-        sid: 22,
+        cid: 6,
+        sid: 62,
         catTitle: "Drinkware",
         subcategoryTitle: "Water Bottle"
     },
 
     {
-        cid: 4,
-        sid: 23,
+        cid: 6,
+        sid: 63,
         catTitle: "Drinkware",
         subcategoryTitle: "Steel Tumbler"
     },
 
     {
-        cid: 4,
-        sid: 24,
+        cid: 6,
+        sid: 64,
         catTitle: "Drinkware",
         subcategoryTitle: "Pint Glass"
     },
 
     {
-        cid: 5,
-        sid: 25,
+        cid: 2,
+        sid: 21,
         catTitle: "Design",
         subcategoryTitle: "Nature"
     },
 
     {
-        cid: 5,
-        sid: 26,
+        cid: 2,
+        sid: 22,
         catTitle: "Design",
         subcategoryTitle: "Psychology"
     },
 
     {
-        cid: 5,
-        sid: 27,
+        cid: 2,
+        sid: 23,
         catTitle: "Design",
         subcategoryTitle: "Campaign"
     },
 
     {
-        cid: 5,
-        sid: 28,
+        cid: 2,
+        sid: 24,
         catTitle: "Design",
         subcategoryTitle: "Random"
     },
 
     {
-        cid: 5,
-        sid: 29,
+        cid: 2,
+        sid: 25,
         catTitle: "Design",
         subcategoryTitle: "Quotes"
     },
 
     {
-        cid: 6,
-        sid: 30,
+        cid: 2,
+        sid: 26,
+        catTitle: "Design",
+        subcategoryTitle: "Science"
+    },
+
+    {
+        cid: 7,
+        sid: 71,
         catTitle: "About Us",
         subcategoryTitle: "Privacy Policy"
     },
 
     {
-        cid: 6,
-        sid: 31,
+        cid: 7,
+        sid: 72,
         catTitle: "About Us",
         subcategoryTitle: "Cookie Policy"
     },
 
     {
-        cid: 6,
-        sid: 32,
+        cid: 7,
+        sid: 73,
         catTitle: "About Us",
         subcategoryTitle: "Contact Us"
     }
@@ -605,7 +909,7 @@ const product = [
         categoryTitle: "Innerwear | Tank Top",
         designTitle: "Paradise my foot",
         designShade: "Yellow",
-        productDescription: "Women's Flowy Tank Top",
+        productDescription: "Women's Flowy Tank...",
         imageUrl: "https://vangogh.teespring.com/v3/image/rnvtjHm9rz9AhmgAF6uURJZ2Vb0/800/800.jpg",
         productUrl: "https://www.oriyostyles.com/listing/yellow-jacket-legging-tanktop?product=536"
     },
@@ -656,13 +960,13 @@ const product = [
         isNew: true,
         isMostVisited: false,
         priceNew: "22.99",
-        productTitle: "Racerback Tank",
+        productTitle: "Racerback Ta...",
         category: "Apparel",
         subCategory: "Tank Tops",
-        categoryTitle: "Women | Racerback Tank",
+        categoryTitle: "Women | Racerback...",
         designTitle: "Paradise my foot",
         designShade: "Yellow",
-        productDescription: "Women's Racerback Tank",
+        productDescription: "Women's Racerback T...",
         imageUrl: "https://vangogh.teespring.com/v3/image/zfy0LMe0MInftRt98XtlGgw46OE/800/800.jpg",
         productUrl: "https://www.oriyostyles.com/listing/yellow-jacket-legging-tanktop?product=1912"
     },
@@ -1077,7 +1381,7 @@ const product = [
         isNew: true,
         isMostVisited: false,
         priceNew: "22.49",
-        productTitle: "Poster-46x61cm",
+        productTitle: "Poster-46x61...",
         category: "Homeware",
         subCategory: "Wall Art",
         categoryTitle: "Wall Art | Poster",
@@ -1153,7 +1457,7 @@ const product = [
         isNew: true,
         isMostVisited: false,
         priceNew: "22.49",
-        productTitle: "Poster-46x61cm",
+        productTitle: "Poster-46x61...",
         category: "Homeware",
         subCategory: "Wall Art",
         categoryTitle: "Wall Art | Poster",

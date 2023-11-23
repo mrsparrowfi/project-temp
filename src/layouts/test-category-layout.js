@@ -34,7 +34,7 @@ function LayoutComponent (props) {
 
     return (
 
-        <section id="container--wrapper" className="container--wrapper">
+        <section id="app--container" className="app--container">
             <div id="header--content" className="header--content">
                 <h4> Oriyostyles </h4>
                 <div className="line--separator line--first"></div>
