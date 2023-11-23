@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Mr+Dafoe&family=Mrs+Saint+Delafield&family=Odibee+Sans&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
     /* declaration of colors variables */
     --font-color: rgb(12, 0, 0);
@@ -19,15 +21,21 @@
 .header--content {
     text-align: center;
     margin-bottom: 1.6rem;
-    padding-bottom: .1rem;
+    border-radius: 7.5rem;
+    background-image: radial-gradient(circle farthest-side, #aaffc1, transparent);
 }
 
 .header--content h4 {
     font-size: 3.2rem;
     font-weight: 500;
     letter-spacing: .25rem;
-    color: var(--font-color);
     font-family: var(--saint-font-family);
+    background: #FF0000;
+    background: -webkit-linear-gradient(to left, #FF0000 0%, #000000 100%);
+    background: -moz-linear-gradient(to left, #FF0000 0%, #000000 100%);
+    background: linear-gradient(to left, #FF0000 0%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .header--content .line--separator {
@@ -47,8 +55,13 @@
     font-weight: 600;
     margin-top: -1.5rem;
     letter-spacing: .15rem;
-    color: var(--font-color);
     font-family: 'Playfair Display', serif;
+    background: #FF0000;
+    background: -webkit-linear-gradient(to left, #FF0000 0%, #000000 100%);
+    background: -moz-linear-gradient(to left, #FF0000 0%, #000000 100%);
+    background: linear-gradient(to left, #FF0000 0%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .header--content .line--second {
@@ -67,7 +80,7 @@
     cursor: pointer;
     letter-spacing: .25rem;
     padding: 0 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: var(--font-color);
     font-family: 'Exo 2', sans-serif;
 }
@@ -99,13 +112,16 @@
     display: flex;
     flex-wrap: nowrap;
     gap: 1rem;
+    margin-top: -1.6rem;
+    padding-bottom: 0.5rem;
+    background-image: radial-gradient(circle farthest-side, #aaffc1 5%, transparent);
 }
 
 .card--holder {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem 1.5rem;
-    margin-top: -1.5rem;
+    margin-top: 0.5rem;
 }
 
 .flex--space {
@@ -119,6 +135,7 @@
     border-radius: .3rem;
     color: var(--font-color);
     box-shadow: var(--box-shadow);
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 .product--card:hover {
@@ -144,6 +161,12 @@
 .product--card .card--header .card--title {
     font-size: 1.4rem;
     font-weight: 400;
+    background: #FF0000;
+    background: -webkit-linear-gradient(to left, #FF0000 0%, #000000 100%);
+    background: -moz-linear-gradient(to left, #FF0000 0%, #000000 100%);
+    background: linear-gradient(to left, #FF0000 0%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .product--card .card--header .card--percentage {
@@ -152,7 +175,7 @@
     padding: .6rem 0;
     border-radius: 50%;
     text-align: center;
-    background: var(--btn-color);
+    background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
 }
 
 .product--card .card--header .card--percentage {
@@ -190,7 +213,7 @@
 
 .product--card .card--footer .card--btn {
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 500;
     color: #ffffff;
 }
 
@@ -198,7 +221,7 @@
     padding: .5rem 1rem;
     text-align: center;
     border-radius: .3rem;
-    background: var(--btn-color);
+    background-image: linear-gradient(120deg, #2b17da 0%, #798591 100%);
 }
 
 /* Button Card CSS */
