@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.aa2139ab.css",
-    "main.js": "/static/js/main.68895f94.js",
-    "static/media/banner-home.jpg": "/static/media/banner-home.7f6f8f689688283c16e3.jpg",
+    "main.css": "/static/css/main.c988325f.css",
+    "main.js": "/static/js/main.6c83eab5.js",
+    "static/media/banner-accessories-5.png": "/static/media/banner-accessories-5.573efada54d2d735be96.png",
+    "static/media/banner-drinkware-2.png": "/static/media/banner-drinkware-2.5d62b8bcaddfd19e20b8.png",
+    "static/media/banner-homeware-4.avif": "/static/media/banner-homeware-4.d961839ad48867d345bc.avif",
+    "static/media/banner-home-2.jpg": "/static/media/banner-home-2.cace1ebf43835dda828e.jpg",
+    "static/media/banner-apparel-1.jpg": "/static/media/banner-apparel-1.4166c1725acff5d7ef2e.jpg",
     "static/media/content-divider.webp": "/static/media/content-divider.ae76edfafcee7b38aa73.webp",
+    "static/media/empty-card-2.jpg": "/static/media/empty-card-2.849288308d4a82161de3.jpg",
     "static/media/oriyo.png": "/static/media/oriyo.58641aa51a67b2b47ef1.png",
+    "static/media/ItemNotFound.avif": "/static/media/ItemNotFound.5462aaf544ec39a645c3.avif",
+    "static/media/empty-card-1.avif": "/static/media/empty-card-1.54fc788d981b1d4855be.avif",
     "index.html": "/index.html",
-    "main.aa2139ab.css.map": "/static/css/main.aa2139ab.css.map",
-    "main.68895f94.js.map": "/static/js/main.68895f94.js.map"
+    "main.c988325f.css.map": "/static/css/main.c988325f.css.map",
+    "main.6c83eab5.js.map": "/static/js/main.6c83eab5.js.map"
   },
   "entrypoints": [
-    "static/css/main.aa2139ab.css",
-    "static/js/main.68895f94.js"
+    "static/css/main.c988325f.css",
+    "static/js/main.6c83eab5.js"
   ]
 }
