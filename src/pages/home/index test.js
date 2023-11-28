@@ -10,10 +10,13 @@ import AccessoriesLayout from "../../layouts/category-layout";
 import DrinkwareLayout from "../../layouts/category-layout";
 import AllProductLayout from "../../layouts/special-layout";
 
+import NewDesignLayoutTest from "../../layouts/test-category-layout";
+
 // import all modules
 import {
     allProducts,
     filterSubCategoryByDesign,
+    filterSubCategoryByDesignTest,
     filterSubCategoryByApparel,
     filterSubCategoryByHomeware,
     filterSubCategoryByAccessories,
@@ -95,6 +98,12 @@ function Home () {
                 category={ Category } 
                 product={ allProducts } 
                 interval = { 17 } 
+            />
+            <NewDesignLayoutTest 
+                title="New Design Test" 
+                subcategory={ filterSubCategoryByDesignTest } 
+                product={ filterProductByNewItem } 
+                interval = { 5 } 
             />
         </>
     );
