@@ -1,23 +1,44 @@
 {
   "files": {
-    "main.css": "/static/css/main.c988325f.css",
-    "main.js": "/static/js/main.6c83eab5.js",
+    "main.css": "/static/css/main.bb96928f.css",
+    "main.js": "/static/js/main.0c8bea73.js",
     "static/media/banner-accessories-5.png": "/static/media/banner-accessories-5.573efada54d2d735be96.png",
+    "static/media/sticker-2.jpg": "/static/media/sticker-2.fb10ca14d13135fcd729.jpg",
+    "static/media/tee-1.jpg": "/static/media/tee-1.413641a8d5f8773628ae.jpg",
+    "static/media/office-2.jpg": "/static/media/office-2.63e3dd781809be7919cc.jpg",
+    "static/media/phonecase-3.webp": "/static/media/phonecase-3.a39484a27efe9320dcc0.webp",
+    "static/media/mugs-3.jpg": "/static/media/mugs-3.1ab53693a388f9ae3b08.jpg",
+    "static/media/tanktops-2.avif": "/static/media/tanktops-2.d0263504af823e0802f6.avif",
+    "static/media/bags-1.jpg": "/static/media/bags-1.4439683031e9e5b88155.jpg",
+    "static/media/bedding-2.jpg": "/static/media/bedding-2.2364630c46250f10c371.jpg",
+    "static/media/fannypack-1.jpg": "/static/media/fannypack-1.eb1d66cbf4b96d4f4a10.jpg",
     "static/media/banner-drinkware-2.png": "/static/media/banner-drinkware-2.5d62b8bcaddfd19e20b8.png",
+    "static/media/stationery-4.webp": "/static/media/stationery-4.edb7415c6c474a6dad84.webp",
+    "static/media/bath.jpg": "/static/media/bath.9fd84c06ef94cc939e9a.jpg",
+    "static/media/sweatshirts-2.jpg": "/static/media/sweatshirts-2.c8c413aabf6259d7a0fa.jpg",
     "static/media/banner-homeware-4.avif": "/static/media/banner-homeware-4.d961839ad48867d345bc.avif",
+    "static/media/neckgaiter-2.webp": "/static/media/neckgaiter-2.50843e84916b86d9a726.webp",
+    "static/media/pillow-1.jpg": "/static/media/pillow-1.6a5bad0fe75a99d0dcb5.jpg",
+    "static/media/sleevetee-2.webp": "/static/media/sleevetee-2.fa54ad7745ede93ab42b.webp",
     "static/media/banner-home-2.jpg": "/static/media/banner-home-2.cace1ebf43835dda828e.jpg",
     "static/media/banner-apparel-1.jpg": "/static/media/banner-apparel-1.4166c1725acff5d7ef2e.jpg",
+    "static/media/steeltumbler-1.jpg": "/static/media/steeltumbler-1.e2750d776a499e3eb739.jpg",
+    "static/media/wallart-1.avif": "/static/media/wallart-1.c3d3fd72ef6f87770b5b.avif",
+    "static/media/hoodies-1.jpeg": "/static/media/hoodies-1.2c6d73ff4f0eaf8d9d62.jpeg",
     "static/media/content-divider.webp": "/static/media/content-divider.ae76edfafcee7b38aa73.webp",
     "static/media/empty-card-2.jpg": "/static/media/empty-card-2.849288308d4a82161de3.jpg",
     "static/media/oriyo.png": "/static/media/oriyo.58641aa51a67b2b47ef1.png",
+    "static/media/socks-1.jpeg": "/static/media/socks-1.e7e8937235222e187f12.jpeg",
+    "static/media/athletics-2.avif": "/static/media/athletics-2.c6e2367460cef08c4adf.avif",
+    "static/media/pintglass-2.jpeg": "/static/media/pintglass-2.dae6eb35c5a2903f2878.jpeg",
     "static/media/ItemNotFound.avif": "/static/media/ItemNotFound.5462aaf544ec39a645c3.avif",
     "static/media/empty-card-1.avif": "/static/media/empty-card-1.54fc788d981b1d4855be.avif",
     "index.html": "/index.html",
-    "main.c988325f.css.map": "/static/css/main.c988325f.css.map",
-    "main.6c83eab5.js.map": "/static/js/main.6c83eab5.js.map"
+    "main.bb96928f.css.map": "/static/css/main.bb96928f.css.map",
+    "main.0c8bea73.js.map": "/static/js/main.0c8bea73.js.map"
   },
   "entrypoints": [
-    "static/css/main.c988325f.css",
-    "static/js/main.6c83eab5.js"
+    "static/css/main.bb96928f.css",
+    "static/js/main.0c8bea73.js"
   ]
 }
