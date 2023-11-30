@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bb96928f.css",
-    "main.js": "/static/js/main.f439c0ef.js",
+    "main.css": "/static/css/main.a4a82d6e.css",
+    "main.js": "/static/js/main.e35745e3.js",
     "static/media/banner-accessories-5.png": "/static/media/banner-accessories-5.573efada54d2d735be96.png",
     "static/media/sticker-2.jpg": "/static/media/sticker-2.fb10ca14d13135fcd729.jpg",
     "static/media/tee-1.jpg": "/static/media/tee-1.413641a8d5f8773628ae.jpg",
@@ -34,11 +34,11 @@
     "static/media/ItemNotFound.avif": "/static/media/ItemNotFound.5462aaf544ec39a645c3.avif",
     "static/media/empty-card-1.avif": "/static/media/empty-card-1.54fc788d981b1d4855be.avif",
     "index.html": "/index.html",
-    "main.bb96928f.css.map": "/static/css/main.bb96928f.css.map",
-    "main.f439c0ef.js.map": "/static/js/main.f439c0ef.js.map"
+    "main.a4a82d6e.css.map": "/static/css/main.a4a82d6e.css.map",
+    "main.e35745e3.js.map": "/static/js/main.e35745e3.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb96928f.css",
-    "static/js/main.f439c0ef.js"
+    "static/css/main.a4a82d6e.css",
+    "static/js/main.e35745e3.js"
   ]
 }
