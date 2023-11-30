@@ -20,7 +20,7 @@ import {
 import { design } from "../../data/data";
 
 // import all controller function
-import { Banner, Divider } from "../../controllers/controller";
+import { Banner, GradientSeparator } from "../../controllers/controller";
 
 // import all styles
 
@@ -28,7 +28,7 @@ import { Banner, Divider } from "../../controllers/controller";
 function Homeware () {
 
     const propsObj = {
-        bannerHome: "banner banner--home--img",
+        bannerHome: "banner banner--homeware--img",
         firstDivider: "banner--divider banner--divider--img",
         secondDivider: "banner--divider banner--divider--img"
     }
@@ -36,31 +36,35 @@ function Homeware () {
     return (
         <>
             { Banner( propsObj.bannerHome ) }
+            { GradientSeparator () }
             <PillowComponent 
                 title="Pillows" 
                 design= { design } 
                 product={ filterDataByPillow } 
                 interval = { 5 } 
             />
+            { GradientSeparator () }
             <WallArtComponent 
                 title="Wall Arts" 
                 design= { design } 
                 product={ filterDataByWallArt } 
                 interval = { 5 } 
             />
-            { Divider( propsObj.firstDivider ) }
+            { GradientSeparator () }
             <BathComponent 
                 title="Bath" 
                 design= { design } 
                 product={ filterDataByBath } 
                 interval = { 5 } 
             />
+            { GradientSeparator () }
             <BeddingComponent 
                 title="Bedding" 
                 design= { design } 
                 product={ filterDataByBedding } 
                 interval = { 5 } 
             />
+            { GradientSeparator () }
             <OfficeComponent 
                 title="Office" 
                 design= { design } 

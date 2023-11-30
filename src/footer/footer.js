@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 // import all controllers 
-import { BackToTop, BackToBottom } from "../controllers/controller";
+import { BackToTop, FooterGradientSeparator } from "../controllers/controller";
 
 // import all images
 import logo from "../assets/images/logo/oriyo.png";
@@ -29,25 +30,34 @@ function Footer () {
     return (
 
         <footer>
+            { FooterGradientSeparator() }
             <ul className="footer--content">
                 <li className="content--product">
                     <h6><i className="bi bi-gift"></i> Products </h6>
                     <div className="line--separator"></div>
                     <div>
-                        <i className="bi bi-chevron-compact-right"></i>
-                        <span> Apparels </span>
+                        <Link to="/apparel">
+                            <i className="bi bi-chevron-compact-right"></i>
+                            <span> Apparels </span>
+                        </Link>
                     </div>
                     <div>
-                        <i className="bi bi-chevron-compact-right"></i>
-                        <span> Home & Descors </span>
+                        <Link to="/homeware">
+                            <i className="bi bi-chevron-compact-right"></i>
+                            <span> Home & Descors </span>
+                        </Link>
                     </div>
                     <div>
-                        <i className="bi bi-chevron-compact-right"></i>
-                        <span> Accessories </span>
+                        <Link to="/accessories">
+                            <i className="bi bi-chevron-compact-right"></i>
+                            <span> Accessories </span>
+                        </Link>
                     </div>
                     <div>
-                        <i className="bi bi-chevron-compact-right"></i>
-                        <span> Drinkware </span>
+                        <Link to="/drinkware">
+                            <i className="bi bi-chevron-compact-right"></i>
+                            <span> Drinkware </span>
+                        </Link>
                     </div>
                 </li>
 
@@ -57,36 +67,46 @@ function Footer () {
                     <h6><i className="bi bi-link-45deg"></i> Useful Links </h6>
                     <div className="line--separator"></div>
                     <div>
-                        <i className="bi bi-chevron-compact-right"></i>
-                        <span> All Designs </span>
+                        <Link to="/design">
+                            <i className="bi bi-chevron-compact-right"></i>
+                            <span> All Designs </span>
+                        </Link>
                     </div>
                     <div>
-                        <i className="bi bi-chevron-compact-right"></i>
-                        <span> Privacy policy </span>
+                        <Link to="/privacy">
+                            <i className="bi bi-chevron-compact-right"></i>
+                            <span> Privacy policy </span>
+                        </Link>
                     </div>
                     <div>
-                        <i className="bi bi-chevron-compact-right"></i>
-                        <span> Cookie policy </span>
+                        <Link to="/cookie">
+                            <i className="bi bi-chevron-compact-right"></i>
+                            <span> Cookie policy </span>
+                        </Link>
                     </div>
                     <div>
-                        <i className="bi bi-chevron-compact-right"></i>
-                        <span> Contact us </span>
+                        <Link to="/contactus">
+                            <i className="bi bi-chevron-compact-right"></i>
+                            <span> Contact us </span>
+                        </Link>
                     </div>
                 </li>
 
                 <li className="flex--space"></li>
 
                 <li className="footer--logo">
-                    <div className="logo--img">
-                        <img src={ logo } alt="logo" />
-                    </div>
-                    <div className="logo--wrapper">
-                        <svg width="100%" height="4rem">
-                            <text x="50%" y="100%" dy="-0.25em" textAnchor="middle">
-                                Oriyostyles
-                            </text>
-                        </svg>
-                    </div>
+                    <Link to="/">
+                        <div className="logo--img">
+                            <img src={ logo } alt="logo" />
+                        </div>
+                        <div className="logo--wrapper">
+                            <svg width="100%" height="4rem">
+                                <text x="50%" y="100%" dy="-0.25em" textAnchor="middle">
+                                    Oriyostyles
+                                </text>
+                            </svg>
+                        </div>
+                    </Link>
                     <h6>
                         All profits go towards my journey as a creator.<br />
                         I really appreciate your support
@@ -141,12 +161,6 @@ function Footer () {
                 { showBtn && 
                     <button id="btn--back2top" className="btn--back2top" onClick={ BackToTop }>
                         <i className="bi bi-chevron-compact-up"></i>
-                    </button>
-                }
-
-                { showBtn && 
-                    <button id="btn--back2bottom" className="btn--back2bottom" onClick={ BackToBottom }>
-                        <i className="bi bi-chevron-compact-down"></i>
                     </button>
                 }
             </div>

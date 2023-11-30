@@ -16,30 +16,37 @@ body {
     font-size: 16px;
     font-size: 1.6rem;
     color: rgba(0, 0, 0, 0.9);
-
     background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
 }
 
 .app--container {
-    padding: 0;
-    max-width: 73.6%;
-    margin: 7.5rem auto;
+    max-width: 73.5%;
+    margin: 0 auto;
     color: rgba(0, 0, 0, 0.9);
+    background-image: radial-gradient(circle farthest-side, #aaffc1 5%, transparent);
 }
 
 .container--wrapper {
-    padding: 0 0;
-    padding-bottom: 1.5rem;
     max-width: 73.5%;
-    margin: 5rem auto;
+    margin: 0 auto;
     color: rgba(0, 0, 0, 0.9);
+}
+
+.gradient--separator {
+    margin: 0 auto;
+    background-image: radial-gradient(circle farthest-side, #aaffc1 5%, transparent);
 }
 
 /* Banner & Divider CSS */
 
 .banner {
     width: 100%;
-    height: 55vh;
+    height: 60vh;
+}
+
+.submenu--banner {
+    width: 100%;
+    height: 45vh;
 }
 
 .banner--divider {
@@ -48,6 +55,11 @@ body {
 }
 
 .banner--home--img,
+.banner--apparel--img,
+.banner--homeware--img,
+.banner--accessories--img,
+.banner--drinkware--img,
+.banner--pagenotfound--img,
 .banner--divider--img {
     background-repeat: no-repeat;
     background-position: center center;
@@ -55,9 +67,173 @@ body {
 }
 
 .banner--home--img {
-    background-image: url("./assets/images/banner/banner-home.jpg");
+    background-image: url("./assets/images/banner/banner-home-2.jpg");
+}
+
+.banner--apparel--img {
+    background-image: url("./assets/images/banner/banner-apparel-1.jpg");
+}
+
+.banner--homeware--img {
+    background-image: url("./assets/images/banner/banner-homeware-4.avif");
+}
+
+/*
+    Window's Browser Internet Explorer & Edge doesn't support ".avif" format images
+*/
+
+.banner--accessories--img {
+    background-image: url("./assets/images/banner/banner-accessories-5.png");
+}
+
+.banner--drinkware--img {
+    background-image: url("./assets/images/banner/banner-drinkware-2.png");
+}
+
+.banner--pagenotfound--img {
+    background-image: url("./assets/cards/empty-card-2.jpg");
 }
 
 .banner--divider--img {
     background-image: url("./assets/images/divider/content-divider.webp");
+}
+
+.banner--tshirts--img,
+.banner--hoodies--img,
+.banner--sweatshirts--img,
+.banner--tanktops--img,
+.banner--sleevetee--img,
+.banner--athletics--img {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner--tshirts--img {
+    background-image: url("./assets/images/sub-banner/tee-1.jpg");
+}
+
+.banner--hoodies--img {
+    background-image: url("./assets/images/sub-banner/hoodies-1.jpeg");
+}
+
+.banner--sweatshirts--img {
+    background-image: url("./assets/images/sub-banner/sweatshirts-2.jpg");
+}
+
+.banner--tanktops--img {
+    background-image: url("./assets/images/sub-banner/tanktops-2.avif");
+}
+
+.banner--sleevetee--img {
+    background-image: url("./assets/images/sub-banner/sleevetee-2.webp");
+}
+
+.banner--athletics--img {
+    background-image: url("./assets/images/sub-banner//athletics-2.avif");
+}
+
+.banner--pillow--img,
+.banner--wallart--img,
+.banner--bath--img,
+.banner--bedding--img,
+.banner--office--img {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner--pillow--img {
+    background-image: url("./assets/images/sub-banner/pillow-1.jpg");
+}
+
+.banner--wallart--img {
+    background-image: url("./assets/images/sub-banner/wallart-1.avif");
+}
+
+.banner--bath--img {
+    background-image: url("./assets/images/sub-banner/bath.jpg");
+}
+
+.banner--bedding--img {
+    background-image: url("./assets/images/sub-banner/bedding-2.jpg");
+}
+
+.banner--office--img  {
+    background-image: url("./assets/images/sub-banner/office-2.jpg");
+}
+
+.banner--facemask--img,
+.banner--hats--img,
+.banner--phonecase--img,
+.banner--sticker--img,
+.banner--bag--img,
+.banner--neckgaiter--img,
+.banner--stationery--img,
+.banner--fannypack--img,
+.banner--sock--img {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner--facemask--img {
+    background-image: url("./assets/images/sub-banner/facemask-2.jpeg");
+}
+
+.banner--hats--img {
+    background-image: url("./assets/images/sub-banner/hats-5.jpeg");
+}
+
+.banner--phonecase--img {
+    background-image: url("./assets/images/sub-banner/phonecase-3.webp");
+}
+
+.banner--sticker--img {
+    background-image: url("./assets/images/sub-banner/sticker-2.jpg");
+}
+
+.banner--bag--img {
+    background-image: url("./assets/images/sub-banner/bags-1.jpg");
+}
+
+.banner--neckgaiter--img {
+    background-image: url("./assets/images/sub-banner/neckgaiter-2.webp");
+}
+
+.banner--stationery--img {
+    background-image: url("./assets/images/sub-banner/stationery-4.webp");
+}
+
+.banner--fannypack--img {
+    background-image: url("./assets/images/sub-banner/fannypack-1.jpg");
+}
+
+.banner--sock--img {
+    background-image: url("./assets/images/sub-banner/socks-1.jpeg");
+}
+
+.banner--mug--img,
+.banner--waterbottle--img,
+.banner--steeltumbler--img,
+.banner--pintglass--img {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner--mug--img {
+    background-image: url("./assets/images/sub-banner/mugs-3.jpg");
+}
+
+.banner--waterbottle--img {
+    background-image: url("./assets/images/sub-banner/waterbottle-1.jpeg");
+}
+
+.banner--steeltumbler--img {
+    background-image: url("./assets/images/sub-banner/steeltumbler-1.jpg");
+}
+
+.banner--pintglass--img {
+    background-image: url("./assets/images/sub-banner/pintglass-2.jpeg");
 }

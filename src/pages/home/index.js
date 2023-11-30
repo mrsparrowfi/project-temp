@@ -30,7 +30,7 @@ import {
 import { Category } from "../../data/data";
 
 // import all controller function
-import { Banner, Divider } from "../../controllers/controller";
+import { Banner, GradientSeparator } from "../../controllers/controller";
 
 // import all styles
 
@@ -46,50 +46,56 @@ function Home () {
     return (
         <>
             { Banner( propsObj.bannerHome ) }
+            { GradientSeparator () }
             <NewDesignLayout 
                 title="New Design" 
                 subcategory={ filterSubCategoryByDesign } 
                 product={ filterProductByNewItem } 
                 interval = { 5 } 
             />
+            { GradientSeparator () }
             <NewProductLayout 
                 title="New Products" 
                 category={ Category } 
                 product={ filterProductByNewItem } 
                 interval = { 5 } 
             />
+            { GradientSeparator () }
             <PopularProductLayout 
                 title="Most Visited Products" 
                 category={ Category } 
                 product={ filterProductByMostVisitedItem } 
                 interval = { 5 } 
             />
-            { Divider( propsObj.firstDivider ) }
+            { GradientSeparator () }
             <ApparelLayout 
                 title="Apparels" 
                 subcategory={ filterSubCategoryByApparel } 
                 product={ filterProductByApparel } 
                 interval = { 11 } 
             />
+            { GradientSeparator () }
             <HomewareLayout 
                 title="Home & Decor" 
                 subcategory={ filterSubCategoryByHomeware } 
                 product={ filterProductByHomeware } 
                 interval = { 11 } 
             />
+            { GradientSeparator () }
             <AccessoriesLayout 
                 title="Accessories" 
                 subcategory={ filterSubCategoryByAccessories } 
                 product={ filterProductByAccessories } 
                 interval = { 11 } 
             />
+            { GradientSeparator () }
             <DrinkwareLayout 
                 title="Drinkware" 
                 subcategory={ filterSubCategoryByDrinkware } 
                 product={ filterProductByDrinkware } 
                 interval = { 11 } 
             />
-            { Divider( propsObj.firstDivider ) }
+            { GradientSeparator ( ) }
             <AllProductLayout 
                 title="All Products" 
                 category={ Category } 

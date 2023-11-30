@@ -22,10 +22,19 @@ import {
 // import all data
 import { design } from "../../data/data";
 
+// import all controller function
+import { Banner, GradientSeparator } from "../../controllers/controller";
 
 // import all styles
 
-
+const propsObj = {
+    bannerTeeSubMenu: "submenu--banner banner--tshirts--img",
+    bannerHoodieSubMenu: "submenu--banner banner--hoodies--img",
+    bannerSweatshirtSubMenu: "submenu--banner banner--sweatshirts--img",
+    bannerTankTopSubMenu: "submenu--banner banner--tanktops--img",
+    bannerSleeveTeeSubMenu: "submenu--banner banner--sleevetee--img",
+    bannerAthleticSubMenu: "submenu--banner banner--athletics--img"
+}
 
 function ApparelSubMenuRoute () {
 
@@ -46,6 +55,8 @@ function TeeSubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerTeeSubMenu ) }
+            { GradientSeparator () }
             <Tshirts 
                 title="Tee Shirts" 
                 design= { design } 
@@ -60,6 +71,8 @@ function HoodieSubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerHoodieSubMenu ) }
+            { GradientSeparator () }
             <Hoodies 
                 title="Hoodies" 
                 design= { design } 
@@ -74,6 +87,8 @@ function SweatshirtSubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerSweatshirtSubMenu ) }
+            { GradientSeparator () }
             <Sweatshirts 
                 title="Sweatshirts" 
                 design= { design } 
@@ -88,6 +103,8 @@ function TankTopSubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerTankTopSubMenu ) }
+            { GradientSeparator () }
             <TankTops 
                 title="Tank Tops" 
                 design= { design } 
@@ -102,6 +119,8 @@ function SleeveTeeSubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerSleeveTeeSubMenu ) }
+            { GradientSeparator () }
             <SleeveTee 
                 title="Sleeve Tee Shirts" 
                 design= { design } 
@@ -117,6 +136,8 @@ function AthleticSubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerAthleticSubMenu ) }
+            { GradientSeparator () }
             <Athletic 
                 title="Athletic" 
                 design= { design } 

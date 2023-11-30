@@ -18,10 +18,18 @@ import {
 // import all data
 import { design } from "../../data/data";
 
+// import all controller function
+import { Banner, GradientSeparator } from "../../controllers/controller";
 
 // import all styles
 
 
+const propsObj = {
+    bannerMugSubMenu: "submenu--banner banner--mug--img",
+    bannerWaterBottleSubMenu: "submenu--banner banner--waterbottle--img",
+    bannerSteelTumblerSubMenu: "submenu--banner banner--steeltumbler--img",
+    bannerPintGlassSubMenu: "submenu--banner banner--pintglass--img"
+}
 
 function DrinkwareSubMenuRoute () {
 
@@ -40,6 +48,8 @@ function MugSubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerMugSubMenu ) }
+            { GradientSeparator () }
             <Mugs 
                 title="Mugs" 
                 design= { design } 
@@ -54,6 +64,8 @@ function WaterBottleSubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerWaterBottleSubMenu ) }
+            { GradientSeparator () }
             <WaterBottle 
                 title="Water Bottle" 
                 design= { design } 
@@ -68,6 +80,8 @@ function SteelTumblerSubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerSteelTumblerSubMenu ) }
+            { GradientSeparator () }
             <SteelTumbler 
                 title="Steel Tumbler" 
                 design= { design } 
@@ -82,6 +96,8 @@ function PintGlassSubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerPintGlassSubMenu ) }
+            { GradientSeparator () }
             <PintGlass 
                 title="Pint Glass" 
                 design= { design } 

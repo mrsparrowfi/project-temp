@@ -28,10 +28,23 @@ import {
 // import all data
 import { design } from "../../data/data";
 
+// import all controller function
+import { Banner, GradientSeparator } from "../../controllers/controller";
 
 // import all styles
 
 
+const propsObj = {
+    bannerFaceMaskSubMenu: "submenu--banner banner--facemask--img",
+    bannerHatSubMenu: "submenu--banner banner--hats--img",
+    bannerPhoneCaseSubMenu: "submenu--banner banner--phonecase--img",
+    bannerStickerSubMenu: "submenu--banner banner--sticker--img",
+    bannerBagSubMenu: "submenu--banner banner--bag--img",
+    bannerNeckGaiterSubMenu: "submenu--banner banner--neckgaiter--img",
+    bannerStationerySubMenu: "submenu--banner banner--stationery--img",
+    bannerFannyPackSubMenu: "submenu--banner banner--fannypack--img",
+    bannerSockSubMenu: "submenu--banner banner--sock--img"
+}
 
 function AccessoriesSubMenuRoute () {
 
@@ -55,6 +68,8 @@ function FaceMaskSubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerFaceMaskSubMenu ) }
+            { GradientSeparator () }
             <FaceMask 
                 title="Face Mask" 
                 design= { design } 
@@ -69,6 +84,8 @@ function HatsSubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerHatSubMenu ) }
+            { GradientSeparator () }
             <Hats 
                 title="Hats" 
                 design= { design } 
@@ -83,6 +100,8 @@ function PhoneCaseSubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerPhoneCaseSubMenu ) }
+            { GradientSeparator () }
             <PhoneCase 
                 title="Phone Case" 
                 design= { design } 
@@ -97,6 +116,8 @@ function StickerSubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerStickerSubMenu ) }
+            { GradientSeparator () }
             <Sticker 
                 title="Sticker" 
                 design= { design } 
@@ -111,6 +132,8 @@ function BagSubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerBagSubMenu ) }
+            { GradientSeparator () }
             <Bag 
                 title="Bags" 
                 design= { design } 
@@ -125,6 +148,8 @@ function NeckGaiterSubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerNeckGaiterSubMenu ) }
+            { GradientSeparator () }
             <NeckGaiter 
                 title="Neck Gaiter" 
                 design= { design } 
@@ -139,6 +164,8 @@ function StationerySubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerStationerySubMenu ) }
+            { GradientSeparator () }
             <Stationery 
                 title="Stationery" 
                 design= { design } 
@@ -153,6 +180,8 @@ function FannyPackSubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerFannyPackSubMenu ) }
+            { GradientSeparator () }
             <FannyPack 
                 title="Fanny Pack" 
                 design= { design } 
@@ -167,6 +196,8 @@ function SockSubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerSockSubMenu ) }
+            { GradientSeparator () }
             <Sock 
                 title="Sock" 
                 design= { design } 

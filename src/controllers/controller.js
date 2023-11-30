@@ -57,6 +57,28 @@ export function Divider (classname) {
 
 }
 
+export function GradientSeparator () {
+
+    return (
+        <div 
+            className="gradient--separator"
+            style={{ width : "73.5%", height : "5rem" }}
+        ></div>
+    );
+
+}
+
+    export function FooterGradientSeparator () {
+
+    return (
+        <div 
+            className="gradient--separator"
+            style={{ width : "100%", height : "15rem" }}
+        ></div>
+    );
+
+}
+
 export const BackToTop = () => {
 
     window.scrollTo({

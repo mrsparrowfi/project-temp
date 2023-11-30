@@ -18,7 +18,7 @@ import {
 import { design } from "../../data/data";
 
 // import all controller function
-import { Banner, Divider } from "../../controllers/controller";
+import { Banner, GradientSeparator } from "../../controllers/controller";
 
 // import all styles
 
@@ -26,7 +26,7 @@ import { Banner, Divider } from "../../controllers/controller";
 function Drinkware () {
 
     const propsObj = {
-        bannerHome: "banner banner--home--img",
+        bannerHome: "banner banner--drinkware--img",
         firstDivider: "banner--divider banner--divider--img",
         secondDivider: "banner--divider banner--divider--img"
     }
@@ -34,25 +34,28 @@ function Drinkware () {
     return (
         <>
             { Banner( propsObj.bannerHome ) }
+            { GradientSeparator () }
             <MugComponent 
                 title="Mugs" 
                 design= { design } 
                 product={ filterDataByMug } 
                 interval = { 5 } 
             />
+            { GradientSeparator () }
             <WaterBottleComponent 
                 title="Water Bottle" 
                 design= { design } 
                 product={ filterDataByWaterBottle } 
                 interval = { 5 } 
             />
-            { Divider( propsObj.firstDivider ) }
+            { GradientSeparator () }
             <SteelTumblerComponent 
                 title="Steel Tumbler" 
                 design= { design } 
                 product={ filterDataBySteelTumbler } 
                 interval = { 5 } 
             />
+            { GradientSeparator () }
             <PintGlassComponent 
                 title="Pint Glass" 
                 design= { design } 

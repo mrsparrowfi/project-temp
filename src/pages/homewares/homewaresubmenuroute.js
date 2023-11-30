@@ -20,10 +20,19 @@ import {
 // import all data
 import { design } from "../../data/data";
 
+// import all controller function
+import { Banner, GradientSeparator } from "../../controllers/controller";
 
 // import all styles
 
 
+const propsObj = {
+    bannerPillowSubMenu: "submenu--banner banner--pillow--img",
+    bannerWallArtSubMenu: "submenu--banner banner--wallart--img",
+    bannerBathSubMenu: "submenu--banner banner--bath--img",
+    bannerBeddingSubMenu: "submenu--banner banner--bedding--img",
+    bannerOfficeSubMenu: "submenu--banner banner--office--img"
+}
 
 function HomewareSubMenuRoute () {
 
@@ -43,6 +52,8 @@ function PillowSubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerPillowSubMenu ) }
+            { GradientSeparator () }
             <Pillow 
                 title="Pillow" 
                 design= { design } 
@@ -57,6 +68,8 @@ function WallArtSubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerWallArtSubMenu ) }
+            { GradientSeparator () }
             <WallArt 
                 title="Wall Art" 
                 design= { design } 
@@ -71,6 +84,8 @@ function BathSubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerBathSubMenu ) }
+            { GradientSeparator () }
             <Bath 
                 title="Bath" 
                 design= { design } 
@@ -85,6 +100,8 @@ function BeddingSubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerBeddingSubMenu ) }
+            { GradientSeparator () }
             <Bedding 
                 title="Bedding" 
                 design= { design } 
@@ -99,6 +116,8 @@ function OfficeSubComponent () {
 
     return (
         <>
+            { Banner( propsObj.bannerOfficeSubMenu ) }
+            { GradientSeparator () }
             <Office 
                 title="Office" 
                 design= { design } 

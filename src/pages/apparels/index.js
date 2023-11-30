@@ -22,7 +22,7 @@ import {
 import { design } from "../../data/data";
 
 // import all controller function
-import { Banner, Divider } from "../../controllers/controller";
+import { Banner, GradientSeparator } from "../../controllers/controller";
 
 // import all styles
 
@@ -30,7 +30,7 @@ import { Banner, Divider } from "../../controllers/controller";
 function Apparel () {
 
     const propsObj = {
-        bannerHome: "banner banner--home--img",
+        bannerHome: "banner banner--apparel--img",
         firstDivider: "banner--divider banner--divider--img",
         secondDivider: "banner--divider banner--divider--img"
     }
@@ -38,37 +38,42 @@ function Apparel () {
     return (
         <>
             { Banner( propsObj.bannerHome ) }
+            { GradientSeparator () }
             <TeeLayout 
                 title="Tee Shirts" 
                 design= { design } 
                 product={ filterDataByTshirt } 
                 interval = { 5 } 
             />
+            { GradientSeparator () }
             <HoodieLayout 
                 title="Hoodies" 
                 design= { design } 
                 product={ filterDataByHoodie } 
                 interval = { 5 } 
             />
+            { GradientSeparator () }
             <SweatshirtLayout 
                 title="Sweatshirts" 
                 design= { design } 
                 product={ filterDataBySweatshirt } 
                 interval = { 5 } 
             />
-            { Divider( propsObj.firstDivider ) }
+            { GradientSeparator () }
             <TankTopLayout 
                 title="Tank Tops" 
                 design= { design } 
                 product={ filterDataByTankTop } 
                 interval = { 5 } 
             />
+            { GradientSeparator () }
             <SleeveTeeLayout 
                 title="Sleeve Tee" 
                 design= { design } 
                 product={ filterDataBySleeveTee } 
                 interval = { 5 } 
             />
+            { GradientSeparator () }
             <AthleticLayout 
                 title="Athletics" 
                 design= { design } 
