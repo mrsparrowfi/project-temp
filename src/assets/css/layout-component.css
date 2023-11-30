@@ -35,6 +35,7 @@
     background: -moz-linear-gradient(to left, #FF0000 0%, #000000 100%);
     background: linear-gradient(to left, #FF0000 0%, #000000 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -61,6 +62,7 @@
     background: -moz-linear-gradient(to left, #FF0000 0%, #000000 100%);
     background: linear-gradient(to left, #FF0000 0%, #000000 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -106,6 +108,7 @@
     border-right: 2px solid black;
 }
 */
+
 /* Product Card CSS */
 
 .card--container {
@@ -166,6 +169,7 @@
     background: -moz-linear-gradient(to left, #FF0000 0%, #000000 100%);
     background: linear-gradient(to left, #FF0000 0%, #000000 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -235,7 +239,10 @@
     text-align: center;
     border-radius: .3rem;
     box-shadow: var(--box-shadow);
-    background: var(--background-hover);
+    background-image: url("../images/banner/empty-card-1.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .button--card i {
@@ -272,23 +279,92 @@
     width: 17.5rem;
     height: 31.65rem;
     padding: 0 1.5rem;
-    padding-top: 5rem;
+    padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     text-align: center;
     border-radius: .3rem;
     box-shadow: var(--box-shadow);
-    background: var(--background-hover);
+    background-image: url("../images/banner/ItemNotFound.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card--blank div {
+    margin-bottom: 2rem;
+}
+
+.card--blank img {
+    width: 7.5rem;
+    height: 7.5rem;
 }
 
 .card--blank h2 {
-    margin-top: 2rem;
-    font-size: 2rem;
+    margin: 1rem 0;
+    font-size: 1.8rem;
     font-weight: 400;
 }
 
 .card--blank span {
     margin: 2.5rem 0;
     padding: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.card--blank .try--again {
+    margin: 2.5rem 1.5rem;
+    padding: .5rem 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-radius: .5rem;
+    border: 1px dotted rgb(59, 44, 16);
+}
+
+.card--blank .try--again:hover {
+    cursor: pointer;
+    background-color: rgba(148, 180, 182, 0.808);
+}
+
+/*                      404 Error [Page not found...]                               */
+
+.page--not--found {
+    padding-top: 15rem;
+    text-align: center;
+    background: #BF0026;
+    background: -webkit-repeating-radial-gradient(circle farthest-corner at center center, #BF0026 0%, #E8FC35 50%);
+    background: -moz-repeating-radial-gradient(circle farthest-corner at center center, #BF0026 0%, #E8FC35 50%);
+    background: repeating-radial-gradient(circle farthest-corner at center center, #BF0026 0%, #E8FC35 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.page--not--found .error--no {
+    font-size: 8rem;
+    font-weight: 500;
+}
+
+.page--not--found .error--title {
+    font-size: 3.6rem;
+    font-weight: 500;
+    margin-top: -2.5rem;
+}
+
+.error--details {
+    padding-top: 2.5rem;
+    margin-left: 12%;
+    background-image: radial-gradient(circle farthest-side, #aaffc1 5%, transparent);
+}
+
+.error--details h6 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.error--details p {
+    padding-left: 2rem;
+    padding-top: 1rem;
     font-size: 1.2rem;
     font-weight: 400;
 }
