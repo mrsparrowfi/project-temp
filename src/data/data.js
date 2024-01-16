@@ -1607,6 +1607,26 @@ const product = [
         productUrl: "https://www.oriyostyles.com/listing/paradisemyfootyellowstationary?product=2101"
     },
 
+    {
+        pID: 828,
+        dID: 1,
+        itemID: "D001-P828",
+        maxOffer: 10,
+        isNew: true,
+        isMostVisited: false,
+        priceNew: "22.91",
+        productTitle: "Water Bottle",
+        category: "Drinkware",
+        subCategory: "Water Bottle",
+        categoryTitle: "Black | Water Bottle",
+        designTitle: "Paradise my foot",
+        designShade: "Black",
+        productDescription: "32oz Stainless Water B...",
+        imageUrl: "https://vangogh.teespring.com/v3/image/VQOq-vE4UcvhBYYd85n6kalH8ds/800/800.jpg",
+        productUrl: "https://www.oriyostyles.com/listing/paradisemyfootyellowstationary?product=2101"
+    },
+
+
 ];
 
 export function Products () {
